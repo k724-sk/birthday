@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            background-color: #b5a3ce;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 900px;
+            padding: 20px;
+            border: 2px solid #F5749D;
+            border-radius: 10px;
+            background-color: #f9b4b4;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #9e135d;
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .message {
+            font-size : 1.2em;
+            color : #aa460cf8
+        }
+        .calendar {
+            background-color: #ddc127;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 300px;
+            border: 5px solid #7f3913;
+        }
+        .surprise {
+            display: none;
+            margin-top: 20px;
+        }
+        .gift {
+            cursor: pointer;
+            color: #ff1493;
+            font-size: 1.7em;
+        }
+        .decoration {
+            margin-top: 20px;
+        }
+        .friend-images {
+            margin-top: 20px;
+        }
+        .friend-images img {
+            width: 100%;
+            max-width: 100%;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        @media (min-width: 600px) {
+            .friend-images img {
+                max-width: 300px;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, My...... </h1>
+        <p>Wishing you all the love and happiness in the world!</p>
+        <div class="message">
+            <p> <b > <i>Mr.Abhijit Singh Ji</i></b></p>
+            <p> Wishing you all the love and happiness in the world on your special day!</p>
+            <p>Tu hamesha hansta rha kar bada acha lagta he </p>
+            <p>tere liye to ye birthday special he aur her birthday tera special hi ho.</p>
+            <p>tu hamesha khush rhe tujhe kabhi kisi ki najar n lage.</p>
+            <p><b>Happy Birthday</b></p>
+            <p>pagal</p>
+        
+        <div class="decoration">
+            <img src="baloon.png" alt="Balloons" width="70%" height="">
+            <img src="cake.png" alt="Cake" width="70% " height="300">
+        </div>
+
+        <video width="70%" height="300" controls>
+            <source src="ak.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        
+       
+        <h2>August 2024</h2>
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td class="special date"><b>24</b></td>
+
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
+
+        <p>Click the gift below for a surprise!</p>
+        <div class="gift" onclick="showSurprise()">
+            🎁 Open Gift 🎁
+        </div>
+        <div class="surprise" id="surprise">
+            <p>Surprise! You are going on a weekend getaway!</p>
+        </div>
+
+        <div class="friend-images">
+            <h2>Memorable Moments</h2>
+            <img src="image3.jpeg" alt="Friend Image 1">
+            <img src="image2.jpeg" alt="Friend Image 2">
+            <img src="image12.jpeg" alt="Friend Image 3">
+            <img src="image4.jpeg" alt="Friend Image 4">
+            <img src="image5.jpeg" alt="Friend Image 5">
+            <img src="image6.jpeg" alt="Friend Image 6">
+            <img src="image7.jpeg" alt="Friend Image 7">
+            <img src="image8.jpeg" alt="Friend Image 8">
+            <img src="image9.jpeg" alt="Friend Image 9">
+            <img src="image10.jpeg" alt="Friend Image 10">
+            <img src="image11.jpeg" alt="Friend Image 11">
+        </div>
+    </div>
+    <audio  src="happybirthday.mp3" autoplay loop></audio>
+
+    <!-- Add canvas-confetti library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('surprise').style.display = 'block';
+            launchConfetti();
+        }
+
+        function launchConfetti() {
+            var end = Date.now() + 5 * 1000;
+
+            // create random particles
+            (function frame() {
+                confetti({
+                    particleCount: 7,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 }
+                });
+                confetti({
+                    particleCount: 7,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 }
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            }());
+        }
+    </script>
+</body>
+</html>
